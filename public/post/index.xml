@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Blog </title>
+    <link>https://hwj4477.github.io/post/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2016-06-15 17:39:44 &#43;0900 KST</updated>
+
+    
+      
+        <item>
+          <title>good to great</title>
+          <link>https://hwj4477.github.io/post/good-to-great/</link>
+          <pubDate>Wed, 15 Jun 2016 17:39:44 KST</pubDate>
+          <author></author>
+          <guid>https://hwj4477.github.io/post/good-to-great/</guid>
+          <description></description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
