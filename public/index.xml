@@ -7,8 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 wjhong</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jun 2016 18:43:06 +0900</lastBuildDate>
     <atom:link href="https://hwj4477.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://hwj4477.github.io/post/hugo_index/</link>
+      <pubDate>Fri, 24 Jun 2016 18:43:06 +0900</pubDate>
+      
+      <guid>https://hwj4477.github.io/post/hugo_index/</guid>
+      <description>&lt;p&gt;A Fast &amp;amp; Modern Static Website Engine&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>about</title>
