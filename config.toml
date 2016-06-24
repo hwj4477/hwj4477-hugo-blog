@@ -2,7 +2,7 @@ baseurl = "https://hwj4477.github.io/"
 title = "Hong's Blog"
 copyright = "&copy; 2016 wjhong"
 languageCode = "en-us"
-theme = "academic"
+theme = "academic_custom"
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = "hwj4477"
