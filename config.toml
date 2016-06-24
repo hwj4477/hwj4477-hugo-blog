@@ -1,11 +1,11 @@
 baseurl = "https://hwj4477.github.io/"
-title = "Developer Hong's Blog"
+title = "Hong's Blog"
 copyright = "&copy; 2016 wjhong"
 languageCode = "en-us"
 theme = "academic"
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = "spf13"
+disqusShortname = "hwj4477"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = ""
@@ -119,6 +119,11 @@ googleAnalytics = ""
     icon = "github"
     icon_pack = "fa"
     link = "//github.com/hwj4477"
+
+  [[params.social]]
+    icon = "rss"
+    icon_pack = "fa"
+    link = "https://hwj4477.github.io"
 
 # Navigation Links
 #   The weight parameter defines the order that the links will appear in.

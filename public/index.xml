@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Developer Hong&#39;s Blog</title>
+    <title>Hong&#39;s Blog</title>
     <link>https://hwj4477.github.io/</link>
-    <description>Recent content on Developer Hong&#39;s Blog</description>
+    <description>Recent content on Hong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 wjhong</copyright>
