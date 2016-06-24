@@ -1,37 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic Theme </title>
+    <title>Developer Hong&#39;s Blog</title>
     <link>https://hwj4477.github.io/</link>
+    <description>Recent content on Developer Hong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author></author>
-    <rights>(C) 2016</rights>
-    <updated>2016-06-15 17:39:44 &#43;0900 KST</updated>
+    <copyright>&amp;copy; 2016 wjhong</copyright>
+    <lastBuildDate>Wed, 15 Jun 2016 17:39:44 +0900</lastBuildDate>
+    <atom:link href="https://hwj4477.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>good to great</title>
+      <link>https://hwj4477.github.io/post/good-to-great/</link>
+      <pubDate>Wed, 15 Jun 2016 17:39:44 +0900</pubDate>
+      
+      <guid>https://hwj4477.github.io/post/good-to-great/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>https://hwj4477.github.io/project/deep-learning/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hwj4477.github.io/project/deep-learning/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
     
+    <item>
+      <title>External Project</title>
+      <link>https://hwj4477.github.io/project/example-external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-        <item>
-          <title>good to great</title>
-          <link>https://hwj4477.github.io/post/good-to-great/</link>
-          <pubDate>Wed, 15 Jun 2016 17:39:44 KST</pubDate>
-          <author></author>
-          <guid>https://hwj4477.github.io/post/good-to-great/</guid>
-          <description></description>
-        </item>
-      
+      <guid>https://hwj4477.github.io/project/example-external-project/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Getting started with the Academic theme for Hugo</title>
+      <link>https://hwj4477.github.io/post/getting-started/</link>
+      <pubDate>Wed, 20 Apr 2016 12:00:00 +0000</pubDate>
       
-    
-      
-    
-      
-        <item>
-          <title>Getting started with the Academic theme for Hugo</title>
-          <link>https://hwj4477.github.io/post/getting-started/</link>
-          <pubDate>Wed, 20 Apr 2016 12:00:00 UTC</pubDate>
-          <author></author>
-          <guid>https://hwj4477.github.io/post/getting-started/</guid>
-          <description>
+      <guid>https://hwj4477.github.io/post/getting-started/</guid>
+      <description>
 
 &lt;p&gt;The Academic theme enables you to easily create a personal academic website using the &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; static site generator.&lt;/p&gt;
 
@@ -151,17 +172,15 @@ $ git pull upstream
 
 &lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
+    <item>
+      <title>Managing content</title>
+      <link>https://hwj4477.github.io/post/managing-content/</link>
+      <pubDate>Wed, 20 Apr 2016 11:00:00 +0000</pubDate>
       
-        <item>
-          <title>Managing content</title>
-          <link>https://hwj4477.github.io/post/managing-content/</link>
-          <pubDate>Wed, 20 Apr 2016 11:00:00 UTC</pubDate>
-          <author></author>
-          <guid>https://hwj4477.github.io/post/managing-content/</guid>
-          <description>
+      <guid>https://hwj4477.github.io/post/managing-content/</guid>
+      <description>
 
 &lt;p&gt;This is a brief guide to managing content with the Academic theme. Content can include homepage sections, publications, projects, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about &lt;a href=&#34;https://hwj4477.github.io/post/writing-markdown-latex/&#34;&gt;writing content with Markdown, LaTeX, and Shortcodes&lt;/a&gt;.&lt;/p&gt;
 
@@ -270,17 +289,15 @@ Further details on your publication can be written here using *Markdown* for for
 
 &lt;p&gt;Note that running &lt;code&gt;hugo&lt;/code&gt; does not remove any previously generated files before building. Therefore, it&amp;rsquo;s best practice to delete your &lt;code&gt;public/&lt;/code&gt; directory prior to running &lt;code&gt;hugo&lt;/code&gt; to ensure no old or interim files are deployed to your server.&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
+    <item>
+      <title>Writing content with Markdown, LaTeX, and Shortcodes</title>
+      <link>https://hwj4477.github.io/post/writing-markdown-latex/</link>
+      <pubDate>Wed, 20 Apr 2016 10:00:00 +0000</pubDate>
       
-        <item>
-          <title>Writing content with Markdown, LaTeX, and Shortcodes</title>
-          <link>https://hwj4477.github.io/post/writing-markdown-latex/</link>
-          <pubDate>Wed, 20 Apr 2016 10:00:00 UTC</pubDate>
-          <author></author>
-          <guid>https://hwj4477.github.io/post/writing-markdown-latex/</guid>
-          <description>
+      <guid>https://hwj4477.github.io/post/writing-markdown-latex/</guid>
+      <description>
 
 &lt;p&gt;Content can be written using &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;Markdown&lt;/a&gt;, &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34;&gt;LaTeX math&lt;/a&gt;, and &lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;Hugo Shortcodes&lt;/a&gt;. Additionally, HTML may be used for advanced formatting.&lt;/p&gt;
 
@@ -440,21 +457,41 @@ print(&amp;quot;You entered: {}&amp;quot;.format(input_string_var))
 &lt;/tbody&gt;
 &lt;/table&gt;
 </description>
-        </item>
-      
+    </item>
     
+    <item>
+      <title>about</title>
+      <link>https://hwj4477.github.io/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
+      <guid>https://hwj4477.github.io/home/about/</guid>
+      <description>
+
+&lt;h1 id=&#34;biography:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Biography&lt;/h1&gt;
+
+&lt;p&gt;Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. Etiam iaculis libero hendrerit ipsum tempus accumsan. Praesent ex justo, aliquam bibendum nulla in, vehicula rhoncus massa. Fusce gravida mattis tellus vel commodo. Etiam molestie non ligula ac venenatis. Integer semper diam at fringilla dapibus. Nunc tincidunt lacinia nisi, sed blandit purus fermentum vel. Morbi tempus dolor dolor. Phasellus scelerisque est elit, et porttitor mauris faucibus sit amet. Phasellus sollicitudin bibendum sem eu blandit. Curabitur congue felis eu velit faucibus porta. Curabitur a pharetra diam.&lt;/p&gt;
+</description>
+    </item>
     
+    <item>
+      <title>A Person Re-Identification System For Mobile Devices</title>
+      <link>https://hwj4477.github.io/publication/person-re-identification/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
+      <guid>https://hwj4477.github.io/publication/person-re-identification/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
     
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://hwj4477.github.io/post/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-        <item>
-          <title>Migrate to Hugo from Jekyll</title>
-          <link>https://hwj4477.github.io/post/migrate-from-jekyll/</link>
-          <pubDate>Mon, 10 Mar 2014 00:00:00 UTC</pubDate>
-          <author></author>
-          <guid>https://hwj4477.github.io/post/migrate-from-jekyll/</guid>
-          <description>
+      <guid>https://hwj4477.github.io/post/migrate-from-jekyll/</guid>
+      <description>
 
 &lt;h2 id=&#34;move-static-content-to-static:964c172ef5e837f03573891408d8d631&#34;&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;
 
@@ -623,13 +660,37 @@ Liquid::Template.register_tag(&#39;image&#39;, Jekyll::ImageTag)
 
 &lt;p&gt;&lt;a href=&#34;http://heyitsalex.net/&#34;&gt;Hey, it&amp;rsquo;s Alex&lt;/a&gt; was migrated in less than a &lt;em&gt;father-with-kids day&lt;/em&gt; from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this &lt;a href=&#34;https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610&#34;&gt;diff&lt;/a&gt;.&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
+    <item>
+      <title>Mobile visual clothing search</title>
+      <link>https://hwj4477.github.io/publication/clothing-search/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
+      <guid>https://hwj4477.github.io/publication/clothing-search/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
     
+    <item>
+      <title>teaching</title>
+      <link>https://hwj4477.github.io/home/teaching/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-    
+      <guid>https://hwj4477.github.io/home/teaching/</guid>
+      <description>&lt;p&gt;I am a teaching instructor for the following courses at University X:&lt;/p&gt;
 
+&lt;ul&gt;
+&lt;li&gt;CS101: An intro to computer science&lt;/li&gt;
+&lt;li&gt;CS102: An intro to computer science&lt;/li&gt;
+&lt;li&gt;CS103: An intro to computer science&lt;/li&gt;
+&lt;li&gt;CS104: An intro to computer science&lt;/li&gt;
+&lt;li&gt;CS105: An intro to computer science&lt;/li&gt;
+&lt;li&gt;CS106: An intro to computer science&lt;/li&gt;
+&lt;li&gt;CS107: An intro to computer science&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

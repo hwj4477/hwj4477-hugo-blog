@@ -1,24 +1,24 @@
 baseurl = "https://hwj4477.github.io/"
-title = "Academic Theme"
-copyright = "&copy; 2016 Your Name"
+title = "Developer Hong's Blog"
+copyright = "&copy; 2016 wjhong"
 languageCode = "en-us"
 theme = "academic"
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = "spf13"
+disqusShortname = "wjhong"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = ""
 
 
 [params]
-  name = "Lena Smith"
+  name = "Woojeong Hong"
   role = "Professor of Artificial Intelligence"
-  organization = "Stanford University"
+  organization = ""
   avatar = "portrait.jpg"
-  email = "test@example.org"
-  address = "Stanford AI Lab, Stanford University, California, 90210, USA."
-  phone = "888 888 88 88"
+  email = "hwj4477@gmail.com"
+  address = "Gwanak-gu Seoul, KOREA REPUBLIC"
+  phone = ""
 
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
@@ -123,7 +123,7 @@ googleAnalytics = ""
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/gcushen"
+    link = "//github.com/hwj4477"
 
 
 # Navigation Links

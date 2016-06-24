@@ -3,7 +3,7 @@
 echo -e "\033[0;32mDeploying updates to Github...\033[0m"
 
 # Build the project.
-hugo --theme=hugo_theme_robust
+hugo -t academic
 
 # Add changes to git.
 git add -A
