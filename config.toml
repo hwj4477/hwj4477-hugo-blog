@@ -5,7 +5,7 @@ languageCode = "en-us"
 theme = "academic"
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = "wjhong"
+disqusShortname = "spf13"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = ""
@@ -14,9 +14,11 @@ googleAnalytics = ""
 [params]
   name = "Woojeong Hong"
   role = "Developer"
+#organization = "Stanford University"
   avatar = "portrait.jpg"
   email = "hwj4477@gmail.com"
-  address = "Gwanak-gu Seoul, KOREA REPUBLIC"
+  address = "Gwanak-Gu Seoul, Korea Republic"
+#phone = "888 888 88 88"
 
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
@@ -35,7 +37,7 @@ googleAnalytics = ""
   # Biography section.
   # Section will only be displayed if `content/home/about.md` exists.
   [params.about]
-    interests = ["Artificial Intelligence", "Computational Linguistics", "Information Retrieval"]
+    interests = ["iOS", "Android", "Ruby", "Swift"]
     str_interests = "Interests"
     str_education = "Education"
 
@@ -53,6 +55,22 @@ googleAnalytics = ""
       course = "BSc in Artificial Intelligence"
       institution = "Massachusetts Institute of Technology"
       year = 2008
+
+  # Selected Publications section.
+  # Section will only be displayed if there are publications with `selected = true` in their `+++` preamble.
+  [params.publications_selected]
+    detailed_list = false
+    title = "Selected Publications"
+    subtitle = ""
+
+  # Publications section.
+  # Section will only be displayed if there are publications in `content/publication/`.
+  [params.publications]
+    count = 10
+    detailed_list = false
+    title = "Recent Publications"
+    subtitle = ""
+    str_all = "More Publications"
 
   # Posts section.
   # Section will only be displayed if there are posts in `content/post/`.
@@ -93,9 +111,19 @@ googleAnalytics = ""
     link = "mailto:hwj4477@gmail.com"
 
   [[params.social]]
+    icon = "twitter"
+    icon_pack = "fa"
+    link = "//twitter.com/GeorgeCushen"
+
+  [[params.social]]
+    icon = "google-scholar"
+    icon_pack = "ai"
+    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+
+  [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/hwj4477"
+    link = "//github.com/gcushen"
 
 
 # Navigation Links
@@ -107,16 +135,26 @@ googleAnalytics = ""
   weight = 1
 
 [[menu.main]]
+  name = "Publications"
+  url = "#publications"
+  weight = 2
+
+[[menu.main]]
   name = "Posts"
   url = "#posts"
-  weight = 2
+  weight = 3
 
 [[menu.main]]
   name = "Projects"
   url = "#projects"
-  weight = 3
+  weight = 4
+
+[[menu.main]]
+  name = "Teaching"
+  url = "#teaching"
+  weight = 5
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 4
+  weight = 6
