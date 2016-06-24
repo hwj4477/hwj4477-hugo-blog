@@ -120,10 +120,10 @@ googleAnalytics = ""
     icon_pack = "fa"
     link = "//github.com/hwj4477"
 
-  [[params.social]]
-    icon = "rss"
-    icon_pack = "fa"
-    link = "https://hwj4477.github.io"
+#[[params.social]]
+#    icon = "rss"
+#   icon_pack = "fa"
+#   link = "https://hwj4477.github.io"
 
 # Navigation Links
 #   The weight parameter defines the order that the links will appear in.
