@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Noticia+Text:400,700|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="https://hwj4477.github.io/css/styles.css">
+    <link rel="stylesheet" href="https://hwj4477.github.io/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://hwj4477.github.io/index.xml">
+
+    
+    <title>Managing content - Academic Theme</title>
+    <meta property='og:title' content="Managing content - Academic Theme">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="https://hwj4477.github.io/post/managing-content/">
+    
+    
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"https:\/\/hwj4477.github.io\/"
+    },
+    "headline": "Managing content |  ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "",
+      "height": 700,
+      "width": 700
+    },
+    "datePublished": "2016-04-20T11:00:00JST",
+    "dateModified": "2016-04-20T11:00:00JST",
+    "author": {
+      "@type": "Person",
+      "name": "",
+      "image": "https:\/\/hwj4477.github.io\/images/logo.png"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "\x26copy; 2016 Your Name",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https:\/\/hwj4477.github.io\/images/logo.png",
+        "height": 60,
+        "width": 60
+      }
+    },
+    "description": ""
+  }
+</script>
+</head>
+
+<body>
+
+  <header class="l-header">
+    <div class="p-logo">
+      <a href="https://hwj4477.github.io/">Academic Theme</a>
+    </div>
+  </header>
+
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <article class="single">
+        <div class="image" style="background-image: url(https://hwj4477.github.io/images/default.jpg);"></div>
+        <div class="body">
+          <h1>Managing content</h1>
+          
+
+<p>This is a brief guide to managing content with the Academic theme. Content can include homepage sections, publications, projects, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about <a href="https://hwj4477.github.io/post/writing-markdown-latex/">writing content with Markdown, LaTeX, and Shortcodes</a>.</p>
+
+<p>To enable LaTeX math rendering for a page, you should include <code>math = true</code> in the page&rsquo;s <code>+++</code> preamble, as demonstrated in the included example site. Otherwise, to enable math on the homepage or for all pages, you must globally set <code>math = true</code> in <code>config.toml</code>.</p>
+
+<p>To display an image in publication, post, or project page headers, you can include the <code>image = &quot;my-image.jpg&quot;</code> option in the page <code>+++</code> preamble. It is automatically assumed that the image is located in your <code>static/img/</code> folder. In the context of posts and projects, the image is intended to behave as a full width banner across the top of the article.</p>
+
+<h2 id="homepage-sections:50520eca797b64e52c81481b712cad22">Homepage sections</h2>
+
+<p>Homepage sections for publications, projects and posts will automatically hide when there is no content of the respective type. Therefore, if you do not require a particular feature, you can simply delete any associated content in the <code>content/</code> folder.</p>
+
+<h3 id="introduce-yourself-with-a-biography:50520eca797b64e52c81481b712cad22">Introduce yourself with a biography</h3>
+
+<p>Place a cropped portrait photo named <code>portrait.jpg</code> into the <code>static/img/</code> folder, overwriting any defaults.</p>
+
+<p>Edit your biography in the example <code>content/home/about.md</code> file that you copied across from the <code>themes/academic/exampleSite/</code> folder. The research interests and qualifications are stored separately as <code>interests</code> and <code>education</code> variables under <code>[params.about]</code> in <code>config.toml</code>, as can be seen in the example config. It&rsquo;s possible to completely hide the interests and education lists by deleting their respective variables.</p>
+
+<h3 id="add-a-section-to-the-homepage:50520eca797b64e52c81481b712cad22">Add a section to the homepage</h3>
+
+<p>To add a new section to the homepage:</p>
+
+<pre><code>hugo new home/my-section-name.md
+</code></pre>
+
+<p>Then edit the newly created file <code>content/home/my-section-name.md</code> with your section title and content. In the <code>+++</code> preamble, you should also increment the <code>section_id</code> to ensure it&rsquo;s unique amongst the other sections in <code>content/home</code> and you can adjust <code>weight</code> variable to change the order within the custom section of the home page.</p>
+
+<p>You may also wish to add a navigation link pointing to the new section. This can be achieved by adding something similar to the following lines to your <code>config.toml</code>, where the URL will consist of the first title word in lowercase:</p>
+
+<pre><code>[[menu.main]]
+    name = &quot;Research&quot;
+    url = &quot;#research&quot;
+    weight = 10
+</code></pre>
+
+<h2 id="create-a-publication:50520eca797b64e52c81481b712cad22">Create a publication</h2>
+
+<p>To create a new publication:</p>
+
+<pre><code>hugo new publication/my-paper-name.md
+</code></pre>
+
+<p>Then edit the default variables at the top of <code>content/publication/my-paper-name.md</code> to include the details of your publication. The <code>url_</code> variables are used to generate links associated with your publication, such as for viewing PDFs of papers. Here is an example:</p>
+
+<pre><code>+++
+abstract = &quot;An abstract...&quot;
+authors = [&quot;First author's name&quot;, &quot;Second author's name&quot;]
+date = &quot;2013-07-01&quot;
+image = &quot;&quot;
+image_preview = &quot;&quot;
+math = false
+publication = &quot;The publishing part of the citation goes here. You may use *Markdown* for italics etc.&quot;
+title = &quot;A publication title, such as title of a paper&quot;
+url_code = &quot;&quot;
+url_dataset = &quot;&quot;
+url_pdf = &quot;pdf/my-paper-name.pdf&quot;
+url_project = &quot;&quot;
+url_slides = &quot;&quot;
+url_video = &quot;&quot;
++++
+
+Further details on your publication can be written here using *Markdown* for formatting. This text will be displayed on the Publication Detail page.
+</code></pre>
+
+<p>The <code>url_</code> links can either point to local or web content. Associated local publication content, such as PDFs, may be copied to a <code>static/pdf/</code> folder and referenced like <code>url_pdf = &quot;pdf/my-paper-name.pdf&quot;</code>.</p>
+
+<p>You can also associate custom link buttons with the publication by adding the following block(s) within the variable preamble above, which is denoted by <code>+++</code>:</p>
+
+<pre><code>[[url_custom]]
+    name = &quot;Custom Link&quot;
+    url = &quot;http://www.example.org&quot;
+</code></pre>
+
+<p>If you enabled <code>detailed_list</code> for publications in <code>config.toml</code>, then there are a few more optional variables that you can include in the publication page preamble. You may use <code>abstract_short = &quot;friendly summary of abstract&quot;</code> and <code>publication_short = &quot;abbreviated publication details&quot;</code> to display a friendly summary of the abstract and abbreviate the publication details, respectively. Furthermore, there is the option to display a different image on the homepage to the publication detail page by setting <code>image_preview = &quot;my-image.jpg&quot;</code>. This can be useful if you wish to scale down the image for the homepage or simply if you just wish to show a different image for the preview.</p>
+
+<h2 id="post-an-article:50520eca797b64e52c81481b712cad22">Post an article</h2>
+
+<p>To create a blog/news article:</p>
+
+<pre><code>hugo new post/my-article-name.md
+</code></pre>
+
+<p>Then edit the newly created file <code>content/post/my-article-name.md</code> with your full title and content.</p>
+
+<h2 id="create-a-project:50520eca797b64e52c81481b712cad22">Create a project</h2>
+
+<p>To create a project:</p>
+
+<pre><code>hugo new project/my-project-name.md
+</code></pre>
+
+<p>Then edit the newly created file <code>content/project/my-project-name.md</code>. Either you can link the project to an external project website by setting the <code>external_link = &quot;http://external-project.com&quot;</code> variable at the top of the file, or you can add content (below the final <code>+++</code>) in order to render a project page on your website.</p>
+
+<h2 id="removing-content:50520eca797b64e52c81481b712cad22">Removing content</h2>
+
+<p>Generally, to remove content, simply delete the relevant file from your <code>content/post</code>, <code>content/publication</code>, <code>content/project</code>, or <code>content/home</code> folder.</p>
+
+<h2 id="view-your-updated-site:50520eca797b64e52c81481b712cad22">View your updated site</h2>
+
+<p>After you have made changes to your site, you can view it by running the <code>hugo server --watch</code> command and then opening <a href="http://localhost:1313">localhost:1313</a> in your web browser.</p>
+
+<h2 id="deploy-your-site:50520eca797b64e52c81481b712cad22">Deploy your site</h2>
+
+<p>Finally, you can build the static website to a <code>public/</code> folder ready for deployment using the <code>hugo</code> command.</p>
+
+<p>You may then deploy your site by copying the <code>public/</code> directory (by FTP, SFTP, WebDAV, Rsync, git push, etc.) to your production web server.</p>
+
+<p>Note that running <code>hugo</code> does not remove any previously generated files before building. Therefore, it&rsquo;s best practice to delete your <code>public/</code> directory prior to running <code>hugo</code> to ensure no old or interim files are deployed to your server.</p>
+
+        </div>
+
+        <aside>
+          <section>
+            <div>
+              <div class="p-share">
+                <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fhwj4477.github.io%2fpost%2fmanaging-content%2f&t=Managing%20content" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fhwj4477.github.io%2fpost%2fmanaging-content%2f&text=Managing%20content&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+                <a href="https://plus.google.com/share?url=https%3a%2f%2fhwj4477.github.io%2fpost%2fmanaging-content%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+                <a href="http://getpocket.com/edit?url=https%3a%2f%2fhwj4477.github.io%2fpost%2fmanaging-content%2f&title=Managing%20content" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+              </div>
+            </div>
+          </section>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-3">
+      <aside class="site">
+
+  
+  <section>
+    <header>Table Of Contents</header>
+    <div><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#homepage-sections:50520eca797b64e52c81481b712cad22">Homepage sections</a>
+<ul>
+<li><a href="#introduce-yourself-with-a-biography:50520eca797b64e52c81481b712cad22">Introduce yourself with a biography</a></li>
+<li><a href="#add-a-section-to-the-homepage:50520eca797b64e52c81481b712cad22">Add a section to the homepage</a></li>
+</ul></li>
+<li><a href="#create-a-publication:50520eca797b64e52c81481b712cad22">Create a publication</a></li>
+<li><a href="#post-an-article:50520eca797b64e52c81481b712cad22">Post an article</a></li>
+<li><a href="#create-a-project:50520eca797b64e52c81481b712cad22">Create a project</a></li>
+<li><a href="#removing-content:50520eca797b64e52c81481b712cad22">Removing content</a></li>
+<li><a href="#view-your-updated-site:50520eca797b64e52c81481b712cad22">View your updated site</a></li>
+<li><a href="#deploy-your-site:50520eca797b64e52c81481b712cad22">Deploy your site</a></li>
+</ul></li>
+</ul>
+</nav></div>
+  </section>
+  
+
+  
+  <section>
+    <header>Menu</header>
+    <div>
+      <nav class="p-menu">
+        
+        <ul>
+          
+          <li>
+            
+          <li><a href="#top"> Home</a></li>
+          
+          
+          <li>
+            
+          <li><a href="#publications"> Publications</a></li>
+          
+          
+          <li>
+            
+          <li><a href="#posts"> Posts</a></li>
+          
+          
+          <li>
+            
+          <li><a href="#projects"> Projects</a></li>
+          
+          
+          <li>
+            
+          <li><a href="#teaching"> Teaching</a></li>
+          
+          
+          <li>
+            
+          <li><a href="#contact"> Contact</a></li>
+          
+          
+        </ul>
+        
+      </nav>
+    </div>
+  </section>
+  
+
+  <section>
+    <header>LatestPosts</header>
+    <div>
+      
+      <article class="li">
+  <a href="https://hwj4477.github.io/post/good-to-great/" class="clearfix">
+    <div class="image" style="background-image: url(https://hwj4477.github.io/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Wed, Jun 15, 2016</time>
+      </div>
+      <h2 class="title">good to great</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://hwj4477.github.io/project/deep-learning/" class="clearfix">
+    <div class="image" style="background-image: url(https://hwj4477.github.io/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Wed, Apr 27, 2016</time>
+      </div>
+      <h2 class="title">Deep Learning</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://hwj4477.github.io/project/example-external-project/" class="clearfix">
+    <div class="image" style="background-image: url(https://hwj4477.github.io/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Wed, Apr 27, 2016</time>
+      </div>
+      <h2 class="title">External Project</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://hwj4477.github.io/post/getting-started/" class="clearfix">
+    <div class="image" style="background-image: url(https://hwj4477.github.io/images/banners/getting-started.png);"></div>
+    <footer>
+      <div class="date">
+        <time>Wed, Apr 20, 2016</time>
+      </div>
+      <h2 class="title">Getting started with the Academic theme for Hugo</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://hwj4477.github.io/post/managing-content/" class="clearfix">
+    <div class="image" style="background-image: url(https://hwj4477.github.io/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Wed, Apr 20, 2016</time>
+      </div>
+      <h2 class="title">Managing content</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://hwj4477.github.io/post/writing-markdown-latex/" class="clearfix">
+    <div class="image" style="background-image: url(https://hwj4477.github.io/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Wed, Apr 20, 2016</time>
+      </div>
+      <h2 class="title">Writing content with Markdown, LaTeX, and Shortcodes</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://hwj4477.github.io/home/about/" class="clearfix">
+    <div class="image" style="background-image: url(https://hwj4477.github.io/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Wed, Apr 20, 2016</time>
+      </div>
+      <h2 class="title">about</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://hwj4477.github.io/publication/person-re-identification/" class="clearfix">
+    <div class="image" style="background-image: url(https://hwj4477.github.io/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Tue, Sep 1, 2015</time>
+      </div>
+      <h2 class="title">A Person Re-Identification System For Mobile Devices</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://hwj4477.github.io/post/migrate-from-jekyll/" class="clearfix">
+    <div class="image" style="background-image: url(https://hwj4477.github.io/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Mar 10, 2014</time>
+      </div>
+      <h2 class="title">Migrate to Hugo from Jekyll</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://hwj4477.github.io/publication/clothing-search/" class="clearfix">
+    <div class="image" style="background-image: url(https://hwj4477.github.io/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Jul 1, 2013</time>
+      </div>
+      <h2 class="title">Mobile visual clothing search</h2>
+    </footer>
+  </a>
+</article>
+
+      
+    </div>
+  </section>
+
+  
+  <section>
+    <header>category</header>
+    <div>
+      <ul>
+        
+      </ul>
+    </div>
+  </section>
+  
+  <section>
+    <header>tag</header>
+    <div>
+      <ul>
+        <li><a href="https://hwj4477.github.io/tags/academic">academic</a></li><li><a href="https://hwj4477.github.io/tags/hugo">hugo</a></li>
+      </ul>
+    </div>
+  </section>
+  
+
+</aside>
+
+    </div>
+  </div>
+</div>
+
+
+<footer class="l-footer">
+  <p>&copy; 2016 Your Name</p>
+  <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank" rel="nofollow">robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+  </body>
+</html>
+

@@ -14,12 +14,12 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="https://hwj4477.github.io/index.xml">
 
     
-    <title>good to great - Academic Theme</title>
-    <meta property='og:title' content="good to great - Academic Theme">
+    <title>Writing content with Markdown, LaTeX, and Shortcodes - Academic Theme</title>
+    <meta property='og:title' content="Writing content with Markdown, LaTeX, and Shortcodes - Academic Theme">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="https://hwj4477.github.io/post/good-to-great/">
+    <meta property="og:url" content="https://hwj4477.github.io/post/writing-markdown-latex/">
     
     
 
@@ -32,15 +32,15 @@
       "@type":"WebPage",
       "@id":"https:\/\/hwj4477.github.io\/"
     },
-    "headline": "good to great |  ",
+    "headline": "Writing content with Markdown, LaTeX, and Shortcodes |  ",
     "image": {
       "@type": "ImageObject",
       "url": "",
       "height": 700,
       "width": 700
     },
-    "datePublished": "2016-06-15T17:39:44JST",
-    "dateModified": "2016-06-15T17:39:44JST",
+    "datePublished": "2016-04-20T10:00:00JST",
+    "dateModified": "2016-04-20T10:00:00JST",
     "author": {
       "@type": "Person",
       "name": "",
@@ -79,18 +79,177 @@
       <article class="single">
         <div class="image" style="background-image: url(https://hwj4477.github.io/images/default.jpg);"></div>
         <div class="body">
-          <h1>good to great</h1>
+          <h1>Writing content with Markdown, LaTeX, and Shortcodes</h1>
           
+
+<p>Content can be written using <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>, <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX math</a>, and <a href="http://gohugo.io/extras/shortcodes/">Hugo Shortcodes</a>. Additionally, HTML may be used for advanced formatting.</p>
+
+<h2 id="sub-headings:0afd2be5f3811fd4e99a8623ad12ea79">Sub-headings</h2>
+
+<pre><code>## H2
+### H3
+#### H4
+##### H5
+###### H6
+</code></pre>
+
+<h2 id="emphasis:0afd2be5f3811fd4e99a8623ad12ea79">Emphasis</h2>
+
+<pre><code>Italics with *asterisks* or _underscores_.
+
+Bold with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough with ~~two tildes~~.
+</code></pre>
+
+<h2 id="ordered-lists:0afd2be5f3811fd4e99a8623ad12ea79">Ordered lists</h2>
+
+<pre><code>1. First item
+2. Another item
+</code></pre>
+
+<h2 id="unordered-lists:0afd2be5f3811fd4e99a8623ad12ea79">Unordered lists</h2>
+
+<pre><code>* First item
+* Another item
+</code></pre>
+
+<h2 id="images:0afd2be5f3811fd4e99a8623ad12ea79">Images</h2>
+
+<p>Images may be added to a page by placing them in your <code>static/img/</code> folder and referencing them using one of the following two notations:</p>
+
+<p>A general image:</p>
+
+<pre><code>![alternative text for search engines](/img/screenshot.png)
+</code></pre>
+
+<p>A numbered figure with caption:</p>
+
+<pre><code>{{&lt; figure src=&quot;/img/screenshot.png&quot; title=&quot;Figure Caption&quot; &gt;}}
+</code></pre>
+
+<h2 id="links:0afd2be5f3811fd4e99a8623ad12ea79">Links</h2>
+
+<pre><code>[I'm a link](https://www.google.com)
+[A post]({{&lt; ref &quot;post/hi.md&quot; &gt;}})
+[A publication]({{&lt; ref &quot;publication/hi.md&quot; &gt;}})
+[A project]({{&lt; ref &quot;project/hi.md&quot; &gt;}})
+[Another section]({{&lt; relref &quot;hi.md#who&quot; &gt;}})
+</code></pre>
+
+<h2 id="blockquote:0afd2be5f3811fd4e99a8623ad12ea79">Blockquote</h2>
+
+<pre><code>&gt; This is a blockquote.
+</code></pre>
+
+<blockquote>
+<p>This is a blockquote.</p>
+</blockquote>
+
+<h2 id="code-highlighting:0afd2be5f3811fd4e99a8623ad12ea79">Code highlighting</h2>
+
+<p>Pass the <em>language</em> of the code, such as <code>python</code>, as a parameter after three backticks:</p>
+
+<pre><code>```python
+# Example of code highlighting
+input_string_var = input(&quot;Enter some data: &quot;)
+print(&quot;You entered: {}&quot;.format(input_string_var))
+```
+</code></pre>
+
+<p>Result:</p>
+
+<pre><code class="language-python"># Example of code highlighting
+input_string_var = input(&quot;Enter some data: &quot;)
+print(&quot;You entered: {}&quot;.format(input_string_var))
+</code></pre>
+
+<h2 id="twitter-tweet:0afd2be5f3811fd4e99a8623ad12ea79">Twitter tweet</h2>
+
+<p>To include a single tweet, pass the tweet’s ID from the tweet&rsquo;s URL as parameter to the shortcode:</p>
+
+<pre><code>{{&lt; tweet 666616452582129664 &gt;}}
+</code></pre>
+
+<h2 id="youtube:0afd2be5f3811fd4e99a8623ad12ea79">Youtube</h2>
+
+<pre><code>{{&lt; youtube w7Ft2ymGmfc &gt;}}
+</code></pre>
+
+<h2 id="vimeo:0afd2be5f3811fd4e99a8623ad12ea79">Vimeo</h2>
+
+<pre><code>{{&lt; vimeo 146022717 &gt;}}
+</code></pre>
+
+<h2 id="github-gist:0afd2be5f3811fd4e99a8623ad12ea79">GitHub gist</h2>
+
+<pre><code>{{&lt; gist USERNAME GIST-ID  &gt;}}
+</code></pre>
+
+<h2 id="speaker-deck:0afd2be5f3811fd4e99a8623ad12ea79">Speaker Deck</h2>
+
+<pre><code>{{&lt; speakerdeck 4e8126e72d853c0060001f97 &gt;}}
+</code></pre>
+
+<h2 id="rm-latex-math:0afd2be5f3811fd4e99a8623ad12ea79">$\rm \LaTeX$ math</h2>
+
+<pre><code class="language-TeX">$$\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi$$
+</code></pre>
+
+<p>$$\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi$$</p>
+
+<p>Alternatively, inline math can be written by wrapping the formula with only a single <code>$</code>:</p>
+
+<pre><code>This is inline: $\mathbf{y} = \mathbf{X}\boldsymbol\beta + \boldsymbol\varepsilon$
+</code></pre>
+
+<p>This is inline: $\mathbf{y} = \mathbf{X}\boldsymbol\beta + \boldsymbol\varepsilon$</p>
+
+<h2 id="table:0afd2be5f3811fd4e99a8623ad12ea79">Table</h2>
+
+<p>Code:</p>
+
+<pre><code class="language-Markdown">| Command           | Description                    |
+| ------------------| ------------------------------ |
+| `hugo`            | Build your website.            |
+| `hugo serve -w`   | View your website.             |
+</code></pre>
+
+<p>Result:</p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>hugo</code></td>
+<td>Build your website.</td>
+</tr>
+
+<tr>
+<td><code>hugo serve -w</code></td>
+<td>View your website.</td>
+</tr>
+</tbody>
+</table>
+
         </div>
 
         <aside>
           <section>
             <div>
               <div class="p-share">
-                <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fhwj4477.github.io%2fpost%2fgood-to-great%2f&t=good%20to%20great" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-                <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fhwj4477.github.io%2fpost%2fgood-to-great%2f&text=good%20to%20great&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-                <a href="https://plus.google.com/share?url=https%3a%2f%2fhwj4477.github.io%2fpost%2fgood-to-great%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-                <a href="http://getpocket.com/edit?url=https%3a%2f%2fhwj4477.github.io%2fpost%2fgood-to-great%2f&title=good%20to%20great" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+                <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fhwj4477.github.io%2fpost%2fwriting-markdown-latex%2f&t=Writing%20content%20with%20Markdown%2c%20LaTeX%2c%20and%20Shortcodes" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fhwj4477.github.io%2fpost%2fwriting-markdown-latex%2f&text=Writing%20content%20with%20Markdown%2c%20LaTeX%2c%20and%20Shortcodes&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+                <a href="https://plus.google.com/share?url=https%3a%2f%2fhwj4477.github.io%2fpost%2fwriting-markdown-latex%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+                <a href="http://getpocket.com/edit?url=https%3a%2f%2fhwj4477.github.io%2fpost%2fwriting-markdown-latex%2f&title=Writing%20content%20with%20Markdown%2c%20LaTeX%2c%20and%20Shortcodes" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
               </div>
             </div>
           </section>
@@ -109,7 +268,28 @@
   
   <section>
     <header>Table Of Contents</header>
-    <div></div>
+    <div><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#sub-headings:0afd2be5f3811fd4e99a8623ad12ea79">Sub-headings</a></li>
+<li><a href="#emphasis:0afd2be5f3811fd4e99a8623ad12ea79">Emphasis</a></li>
+<li><a href="#ordered-lists:0afd2be5f3811fd4e99a8623ad12ea79">Ordered lists</a></li>
+<li><a href="#unordered-lists:0afd2be5f3811fd4e99a8623ad12ea79">Unordered lists</a></li>
+<li><a href="#images:0afd2be5f3811fd4e99a8623ad12ea79">Images</a></li>
+<li><a href="#links:0afd2be5f3811fd4e99a8623ad12ea79">Links</a></li>
+<li><a href="#blockquote:0afd2be5f3811fd4e99a8623ad12ea79">Blockquote</a></li>
+<li><a href="#code-highlighting:0afd2be5f3811fd4e99a8623ad12ea79">Code highlighting</a></li>
+<li><a href="#twitter-tweet:0afd2be5f3811fd4e99a8623ad12ea79">Twitter tweet</a></li>
+<li><a href="#youtube:0afd2be5f3811fd4e99a8623ad12ea79">Youtube</a></li>
+<li><a href="#vimeo:0afd2be5f3811fd4e99a8623ad12ea79">Vimeo</a></li>
+<li><a href="#github-gist:0afd2be5f3811fd4e99a8623ad12ea79">GitHub gist</a></li>
+<li><a href="#speaker-deck:0afd2be5f3811fd4e99a8623ad12ea79">Speaker Deck</a></li>
+<li><a href="#rm-latex-math:0afd2be5f3811fd4e99a8623ad12ea79">$\rm \LaTeX$ math</a></li>
+<li><a href="#table:0afd2be5f3811fd4e99a8623ad12ea79">Table</a></li>
+</ul></li>
+</ul>
+</nav></div>
   </section>
   
 
