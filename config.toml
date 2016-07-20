@@ -4,6 +4,9 @@ copyright = "&copy; 2016 wjhong"
 languageCode = "en-us"
 theme = "academic_custom"
 
+[author]
+    name = "Woojeong Hong"
+
 # Enable comments by entering your Disqus shortname
 disqusShortname = "hwj4477"
 
