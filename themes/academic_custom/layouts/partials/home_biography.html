@@ -24,6 +24,7 @@
                 {{ end }}
                 <li>
                     <a href="{{ .URL }}" type="application/rss+xml" target="_blank">RSS</a>
+                    <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
                 </li>
             </ul>
 
