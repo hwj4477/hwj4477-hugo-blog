@@ -43,9 +43,6 @@ googleAnalytics = ""
   [params.about]
     interests = ["iOS", "Android", "Ruby", "Swift", "Go", "Raspberry Pi"]
     str_interests = "Interests"
-
-    likes = ["iOS", "Android", "Ruby", "Swift", "Go", "Raspberry Pi"]
-    str_likes = "Likes"
 #str_education = "Education"
 
 #   [[params.about.education]]
