@@ -1,5 +1,6 @@
 baseurl = "https://hwj4477.github.io/"
 title = "Hong's Blog"
+
 copyright = "&copy; 2016 wjhong"
 languageCode = "en-us"
 theme = "academic_custom"
@@ -42,6 +43,9 @@ googleAnalytics = ""
   [params.about]
     interests = ["iOS", "Android", "Ruby", "Swift", "Go", "Raspberry Pi"]
     str_interests = "Interests"
+
+    likes = ["iOS", "Android", "Ruby", "Swift", "Go", "Raspberry Pi"]
+    str_likes = "Likes"
 #str_education = "Education"
 
 #   [[params.about.education]]
@@ -146,10 +150,10 @@ googleAnalytics = ""
   url = "#posts"
   weight = 3
 
-[[menu.main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 4
+#[[menu.main]]
+#  name = "Projects"
+#  url = "#projects"
+#  weight = 4
 
 #[[menu.main]]
 #  name = "Teaching"

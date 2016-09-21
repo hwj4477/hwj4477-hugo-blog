@@ -46,18 +46,12 @@
             </div>
             {{ end }}
 
-            {{ if isset .Site.Params.about "education" }}
+            {{ if isset .Site.Params.about "likes" }}
             <div class="col-sm-7">
-                <h3>{{ with .Site.Params.about.str_education }}{{ . | markdownify }}{{ end }}</h3>
-                <ul class="ul-edu fa-ul">
-                    {{ range .Site.Params.about.education }}
-                    <li>
-                        <i class="fa-li fa fa-graduation-cap"></i>
-                        <div class="description">
-                            <p class="course">{{ .course }}, {{ .year }}</p>
-                            <p class="institution">{{ .institution }}</p>
-                        </div>
-                    </li>
+                <h3>{{ with .Site.Params.about.str_likes }}{{ . | markdownify }}{{ end }}</h3>
+                <ul>
+                    {{ range .Site.Params.about.likes }}
+                    <li>{{ . }}</li>
                     {{ end }}
                 </ul>
             </div>
