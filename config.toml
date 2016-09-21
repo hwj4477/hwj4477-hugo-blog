@@ -100,11 +100,16 @@ googleAnalytics = ""
   weight = 1
 
 [[menu.main]]
+  name = "About"
+  url = "http://home.wjhong.pe.kr"
+  weight = 2
+
+[[menu.main]]
   name = "Posts"
   url = "#posts"
-  weight = 2
+  weight = 3
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 3
+  weight = 4
