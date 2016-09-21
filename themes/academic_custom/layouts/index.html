@@ -9,7 +9,9 @@
 {{ if eq .Title "about" }}
 <section id="bio" class="home-section">
     <div class="container">
-        {{ partial "home_biography" . }}
+        <div class="row">
+            {{ partial "home_biography" . }}
+        </div>
     </div>
 </section>
 {{ end }}
