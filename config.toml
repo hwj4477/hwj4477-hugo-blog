@@ -101,7 +101,7 @@ googleAnalytics = ""
 
 [[menu.main]]
   name = "About"
-  url = "http://home.wjhong.pe.kr"
+  url = "about"
   weight = 2
 
 [[menu.main]]
